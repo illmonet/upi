@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    max-width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result,
+#upi_code {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#qrcode {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center align the child elements horizontally */
+    margin-top: 20px;
+}

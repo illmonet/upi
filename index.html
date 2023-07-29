@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual ID Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Virtual ID Generator</h1>
+
+        <label for="member_id">Member ID:</label>
+        <input type="number" id="member_id" required>
+        <br>
+
+        <label for="district">District:</label>
+        <select id="district" required>
+            <option value="" disabled selected>District</option>
+            <option value="al">Alappuzha</option>
+            <option value="er">Ernakulam</option>
+            <option value="id">Idukki</option>
+            <option value="kn">Kannur</option>
+            <option value="ks">Kasaragod</option>
+            <option value="kl">Kollam</option>
+            <option value="kt">Kottayam</option>
+            <option value="kz">Kozhikode</option>
+            <option value="ma">Malappuram</option>
+            <option value="pl">Palakkad</option>
+            <option value="pt">Pathanamthitta</option>
+            <option value="tv">Thiruvananthapuram</option>
+            <option value="ts">Thrissur</option>
+            <option value="wa">Wayanad</option>
+        </select>
+        <br>
+
+        <button onclick="onSubmit()">Submit</button>
+        <button onclick="onClear()">Clear</button>
+
+        <p id="result">Generated Virtual ID:<br><span id="generated_id"></span></p>
+        <p id="upi_code">UPI Code:<br><span id="generated_upi"></span></p>
+        <div id="qrcode" style="text-align: center; margin-top: 20px;"></div>
+    </div>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
